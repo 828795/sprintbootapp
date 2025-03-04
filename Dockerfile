@@ -1,9 +1,9 @@
 FROM openjdk:17-jdk-slim
 
 # Install Maven
-RUN apt-get update && \
-    apt-get install -y maven && \
-    apt-get clean;
+#RUN apt-get update && \
+#    apt-get install -y maven && \
+#    apt-get clean;
 
 # Set the working directory
 WORKDIR /app
@@ -18,4 +18,4 @@ RUN mvn clean package
 EXPOSE 8080
 
 # Command to run the JAR file
-ENTRYPOINT ["java", "-jar", "target/sendevops-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "target/sprintbootapp-0.0.1-SNAPSHOT.jar"]
