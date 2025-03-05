@@ -18,4 +18,4 @@ RUN mvn clean package
 EXPOSE 8080
 
 # Command to run the JAR file
-ENTRYPOINT ["java", "-jar", "target/sprintbootapp-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "target/app-0.0.1-SNAPSHOT.jar"]
